@@ -193,7 +193,7 @@ class _VerificationBox extends State<VerificationBox> {
       cursorWidth: 0,
       autofocus: widget.autoFocus,
       inputFormatters: [
-        FilteringTextInputFormatter.deny(RegExp("[0-9]")),
+        FilteringTextInputFormatter.deny(RegExp(r"[0-9]")),
       ],
       maxLength: widget.count,
       buildCounter: (
